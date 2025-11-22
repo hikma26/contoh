@@ -119,12 +119,12 @@ public class MainActivity extends AppCompatActivity {
     android:background="#FFFFFF"
     android:padding="0dp">
 
-    <!-- Header / AppBar -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#6200EE"
-        android:padding="12dp">
+       
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6200EE"
+            android:padding="12dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -135,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
             android:textStyle="bold" />
     </LinearLayout>
 
-    <!-- Konten -->
+   
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -150,7 +150,7 @@ public class MainActivity extends AppCompatActivity {
             android:textSize="16sp"
             android:layout_marginBottom="10dp" />
 
-        <!-- Item 1 -->
+       
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -189,7 +189,7 @@ public class MainActivity extends AppCompatActivity {
                 android:layout_marginLeft="5dp" />
         </LinearLayout>
 
-        <!-- Item 2 -->
+       
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -228,7 +228,7 @@ public class MainActivity extends AppCompatActivity {
                 android:layout_marginLeft="5dp" />
         </LinearLayout>
 
-        <!-- Item 3 -->
+       
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -267,13 +267,13 @@ public class MainActivity extends AppCompatActivity {
                 android:layout_marginLeft="5dp" />
         </LinearLayout>
 
-        <!-- Tombol OK & RESET di ConstraintLayout -->
+        
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="25dp">
 
-            <androidx.appcompat.widget.AppCompatButton
+            <Button
                 android:id="@+id/btnOK"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
@@ -286,7 +286,7 @@ public class MainActivity extends AppCompatActivity {
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <androidx.appcompat.widget.AppCompatButton
+            <Button
                 android:id="@+id/btnReset"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
@@ -301,7 +301,7 @@ public class MainActivity extends AppCompatActivity {
                 app:layout_constraintTop_toTopOf="@+id/btnOK" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <!-- Teks Total -->
+        
         <TextView
             android:id="@+id/txtTotal"
             android:layout_width="match_parent"
@@ -314,4 +314,3 @@ public class MainActivity extends AppCompatActivity {
 
     </LinearLayout>
 </LinearLayout>
-        
